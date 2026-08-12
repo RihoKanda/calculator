@@ -21,5 +21,68 @@
     --key-func-bg-2: #d76a26;
     --key-func-text: #fff6ec;
 
-    
+    --key-op-bg-1: #ffb14d;
+    --key-op-bg-2: #f28c1c;
+    --key-op-text: #4a2600;
+
+    --key-eq-bg-1: #ff7a1a;
+    --key-eq-bg-2: #cc4e05;
+    --key-eq-text: #fff6ec;
+
+    --font-display: 'Share Tech Mono', monospace;
+    --font-ui: 'Inter', sans-serif;
+    --font-brand: 'Cormorant Garamond', serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: var(--font-ui);
+    background: 
+        radial-gradient(ellipse at 50% -10%, #5a2a0c 0%, transparent 60%),
+        linear-gradient(180eg, var(--desk-bg-1), var(--desk-bg-2));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+}
+
+.desk {
+    perspective: 1200px;
+}
+
+.calculator {
+    width: min(340px, 92vw);
+    padding: 20px 18px 16px;
+    border-radius: 22px;
+    background: 
+        linear-gradient(155deg, var(--body-grad-1) 0%, var(--body-grad-2) 55%, var(--body-grad-1) 100%);
+    box-shadow: 
+        0 1px 0 rgba(255, 255, 255, 0.25) inset,
+        0 -6px 12px rgba(0, 0, 0, 0.35) inset,
+        0 30px 60px rgba(0, 0, 0, 0.5),
+        0 8px 18px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.calculator::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.05) 0px,
+        rgba(255, 255, 255, 0.05) 1px,
+        transparent 1px,
+        transparent 3px
+    );
+    mix-blend-mode: overlay;
 }
