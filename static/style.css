@@ -2,5 +2,24 @@
     --desk-bg-1: #3a1c07;
     --desk-bg-2: #180b02;
 
+    --body-grad-1: #ff8a3d;
+    --body-grad-2: #d9520a;
+    --body-edge: #a83c07;
+
+    --bezel: #6e2703;
+
+    --lcd-bg-1: #ffd9a0;
+    --lcd-bg-2: #f5b862;
+    --lcd-text: #6b350a;
+    --lcd-text-dim: #a9713a;
+
+    --key-num-bg-1: #fff2e2;
+    --key-num-bg-2: #ffd9a8;
+    --key-num-text: #6b3410;
+
+    --key-func-bg-1: #f4996a;
+    --key-func-bg-2: #d76a26;
+    --key-func-text: #fff6ec;
+
     
 }
