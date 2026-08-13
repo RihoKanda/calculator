@@ -86,3 +86,47 @@ body {
     );
     mix-blend-mode: overlay;
 }
+
+.brand-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2px 6px 12px;
+}
+
+.brand-name {
+    font-family: var(--font-brand);
+    font-style: italic;
+    font-size: 19px;
+    color: #fff3e6;
+    letter-spacing: 0.5px;
+}
+
+.brand-tag {
+    font-family: var(--font-ui);
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #ffe3c4;
+}
+
+/* --- Screen --- */
+
+.screen-bezel {
+    background: var(--bezel);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 
+        0 2px 6px rgba(0, 0, 0, 0.5) inset,
+        0 1px 0 rgba(255, 255, 255, 0.08);
+    margin-bottom: 16px;
+}
+
+.screen {
+    background: linear-gradient(170deg, var(--lcd-bg-1), var(--lcd-bg-2));
+    border-radius: 6px;
+    padding: 10px 14px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25)inset;
+    position: relative;
+    overflow: hidden;
+}
