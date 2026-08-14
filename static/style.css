@@ -130,3 +130,26 @@ body {
     position: relative;
     overflow: hidden;
 }
+
+.screen::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.35) 0px,
+        rgba(0, 0, 0, 0.35) 0px,
+        transparent 1px,
+        transparent 2px
+    );
+    pointer-events: none;
+}
+
+.screen-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--lcd-text-dim);
+    margin-bottom: 6px;
+}
+
