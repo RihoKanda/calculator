@@ -214,3 +214,44 @@ body {
     transition: transform 0.06s ease, box-shadow 0.06s ease;
     -webkit-tap-highlight-color: transparent;
 }
+
+.key:focus-visible{
+    outline: 2px solid #fff3e6;
+    outline-offset: 2px;
+}
+
+.key-num {
+    background: linear-gradient(180deg, var(--key-num-bg-1), var(--key-num-bg-2));
+    color: var(--key-num-text);
+    box-shadow: 
+        0 3px 0 #d9a25b,
+        0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.key-func {
+    background: linear-gradient(180deg, var(--key-func-bg-1), var(--key-func-bg-2));
+    color: var(--key-func-text);
+    font-size: 15px;
+    box-shadow: 
+        0 3px 0 #a84f16,
+        0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.key-op {
+    background: linear-gradient(180deg, var(--key-op-bg-1), var(--key-op-bg-2));
+    color: var(--key-op-text);
+    font-size: 20px;
+    box-shadow: 
+        0 3px 0 #b8690f,
+        0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.key-equals {
+    grid-column: span 2;
+    background: linear-gradient(180deg, var(--key-eq-bg-1), var(--key-eq-bg-2));
+    color: var(--key-eq-text);
+    font-size: 20px;
+    box-shadow: 
+        0 3px 0 #8a3a04,
+        0 5px 8px rgba(0, 0, 0, 0.3);
+}
