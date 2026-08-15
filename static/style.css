@@ -182,3 +182,35 @@ body {
     overflow: hidden;
     white-space: nowrap;
 }
+
+.display {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 9vw, 40px);
+    color: var(--lcd-text);
+    text-align: right;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    line-height: 1.1;
+}
+
+/* --- Keys --- */
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.key {
+    border: none;
+    border-radius: 10px;
+    height: 56px;
+    font-family: var(--font-ui);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.06s ease, box-shadow 0.06s ease;
+    -webkit-tap-highlight-color: transparent;
+}
