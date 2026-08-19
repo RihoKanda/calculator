@@ -162,11 +162,11 @@ body {
     letter-spacing: 1px;
 }
 
-.status-bot {
+.status-dot {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--lcd-text-dim)
+    background: var(--lcd-text-dim);
     transition: background 0.3s ease;
 }
 
@@ -265,6 +265,28 @@ body {
     transform: translateY(3px);
 }
 
-.key-num-active, .key-num:active {
-    box-shadow: 0 0 0 #b9a25b, 0 2px 4px rgba(0, 0, 0, 0.25);
+.key-num.active, .key-num:active {
+    box-shadow: 0 0 0 #d9a25b, 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.key-func.active, .key-func:active {
+    box-shadow: 0 0 0 #a84f16, 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.key-op.active, .key-op:active {
+    box-shadow: 0 0 0 #b8690f, 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.key-equals.active, .key-equals:active {
+    box-shadow: 0 0 0 #8a3a04, 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.plate {
+    text-align: center;
+    margin-top: 14px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    color: #ffdcb4;
+}
+
+@media (max-width: 360px) {
+    .display { font-size: 30px; }
+    .key { height: 50px; font-size: 16px;}
 }
