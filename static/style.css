@@ -1,36 +1,49 @@
+/** 色とフォント管理してるところだよ **/
 :root {
+    /** ここはページ全体 **/
     --desk-bg-1: #3a1c07;
     --desk-bg-2: #180b02;
 
+    /** 電卓本体 **/
     --body-grad-1: #ff8a3d;
     --body-grad-2: #d9520a;
     --body-edge: #a83c07;
 
+    /** 画面の周りのふち **/
     --bezel: #6e2703;
 
+    /** 液晶画面の背景のいろ **/
     --lcd-bg-1: #ffd9a0;
     --lcd-bg-2: #f5b862;
+    /** 液晶に出す数字のいろ **/
     --lcd-text: #6b350a;
     --lcd-text-dim: #a9713a;
 
+    /** 数字ボタンのいろ **/
     --key-num-bg-1: #fff2e2;
     --key-num-bg-2: #ffd9a8;
     --key-num-text: #6b3410;
 
+    /** 数字以外のボタンの色 **/
     --key-func-bg-1: #f4996a;
     --key-func-bg-2: #d76a26;
     --key-func-text: #fff6ec;
 
+    /** 計算するボタンのいろ **/
     --key-op-bg-1: #ffb14d;
     --key-op-bg-2: #f28c1c;
     --key-op-text: #4a2600;
 
+    /** ＝ぼたんの色 **/
     --key-eq-bg-1: #ff7a1a;
     --key-eq-bg-2: #cc4e05;
     --key-eq-text: #fff6ec;
 
+    /** 液晶の数字フォント **/
     --font-display: 'Share Tech Mono', monospace;
+    /** ボタンなどの通常フォント **/
     --font-ui: 'Inter', sans-serif;
+    /** ロゴのフォント **/
     --font-brand: 'Cormorant Garamond', serif;
 }
 
